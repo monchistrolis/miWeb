@@ -1,0 +1,196 @@
+body {
+    color: white !important;
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #414345,
+        #232526
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #414345,
+        #232526
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav {
+    background: rgba(42, 43, 45, 0.7);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    left: 5%;
+    border-radius: 20px;
+}
+.nav li {
+    margin: 0px 10px 0px 10px;
+}
+
+.nav a {
+    color: white;
+    transition: all 1s ease;
+    /* Añadir posición relativa para alinear el pseudo-elemento */
+}
+
+.nav a::after {
+    content: ""; /* Añadir contenido al pseudo-elemento */
+    position: absolute; /* Añadir posición absoluta para que se posicione relativo al enlace */
+    left: 0; /* Posicionar el pseudo-elemento al principio del enlace */
+    bottom: -3px; /* Ajustar la posición vertical para alinear la línea */
+    width: 0; /* Inicialmente, la línea no tiene ancho */
+    height: 2px; /* Ajustar la altura de la línea */
+    background-color: white; /* Color de la línea */
+    transition: width 0.5s ease; /* Transición para la animación de la línea */
+}
+
+.nav a:hover::after {
+    width: 100%; /* Aumentar el ancho de la línea al ancho completo del enlace al hacer hover */
+}
+
+.nav a:hover {
+    color: white;
+    text-decoration: none; /* Cambiar la decoración del texto para evitar la línea subrayada */
+    transform: scale(1.2);
+}
+
+.imgPerfilContainer {
+    margin-top: 80px;
+}
+.imgPerfil {
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.presentacion {
+    margin-top: 50px;
+}
+.sobreMi {
+}
+.emailIn {
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+.btnOp {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.tituloCv {
+}
+.btnDescarga {
+    text-decoration: none;
+    color: black;
+    background: white;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all 1s ease;
+    text-align: center;
+}
+
+.btnDescarga:hover {
+    transform: scale(1.1);
+}
+
+.imgProyecto {
+    width: 4%;
+}
+.imagen {
+    width: 100%;
+    border-radius: 20px;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(12, 53, 133);
+    border: solid black 5px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.link:hover {
+    transform: scale(1.1);
+}
+.link1 {
+    text-decoration: none;
+    color: white;
+    background-color: #d81978;
+    border: solid black 5px;
+
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.link1:hover {
+    transform: scale(1.1);
+}
+.git{
+    width: 10%;
+}
+.btngit{
+    background: white;
+    padding: 3px;
+    text-align: center;
+}
+
+.linke{
+    width: 10%;
+}
+.logo{
+    width: 50%;
+}
+
+
+.progreso {
+    position: relative; /* Asegura que el elemento relativo sea el contenedor para el seudoelemento */
+    height: 20px;
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+    border-radius: 10px;
+    background: white;
+    border: solid black 5px;
+
+}
+
+.progreso::before {
+    content: ''; /* Agrega contenido al seudoelemento */
+    position: absolute;
+    top: 0; /* Asegura que el seudoelemento esté alineado correctamente */
+    left: 0; /* Asegura que el seudoelemento esté alineado correctamente */
+    height: 100%; /* Establece la altura del seudoelemento igual a la del contenedor */
+    width: var(--wth); /* Usa la variable --wth para establecer la anchura */
+    border-radius: 10px;
+}
+
+/* Colores para las barras de progreso */
+.progreso.html-bar::before {
+    background-color: #f06529; /* Naranja */
+}
+
+.progreso.css-bar::before {
+    background-color: #2965f1; /* Azul */
+}
+
+.progreso.js-bar::before {
+    background-color: #f0db4f; /* Amarillo */
+}
+
+.progreso.sql-bar::before {
+    background-color: #008000; /* Verde */
+}
+
+.progreso.laravel-bar::before {
+    background-color: #ff2d20; /* Rojo */
+}
+
+.progreso.android-bar::before {
+    background-color: #a4c639; /* Verde */
+}

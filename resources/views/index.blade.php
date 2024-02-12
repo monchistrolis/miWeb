@@ -3,7 +3,7 @@
     <div class="imgPerfilContainer col-lg-4 col-md-5 col-sm-12 col-12   container d-flex justify-content-center">
         <img class="imgPerfil col-lg-4 col-md-6 col-sm-5 col-5" src="/images/fotoPerfil.webp" alt="fotoPerfil">
     </div>
-
+    {{-- presentacion --}}
     <div class="container presentacion col-lg-5 " id="sobremi">
         <div class="sobreMi">
             <h2 style="color: white"> Ramon Aguilera!</h2>
@@ -12,12 +12,14 @@
             </p>
         </div>
     </div>
+    {{-- correo --}}
     <div class="container col-lg-5 col-md-12 col-sm-12 col-12" id="social">
         <div class="row">
             <div class="email col-lg-6 col-md-6 ">
                 <input id="emailInput" class="emailIn col-8 col-sm-10 col-md-12 col-lg-12" type="text"
                     placeholder="ramondeveloper96@gmail.com">
             </div>
+
 
             <div class="btnOpciones d-flex justify-content-center mt-2 col-lg-6 col-md-6">
                 <button class="btnOp col-lg-12 col-md-12 col-sm-10 col-8" id="copyButton">Copiar Correo</button>
@@ -50,7 +52,7 @@
             </div>
         </div>
     </div>
-
+    {{-- cv --}}
 
     <div class="container col-lg-5   mt-5">
         <div class="row">
@@ -61,14 +63,14 @@
             </div>
         </div>
     </div>
-
+    {{-- proyectos --}}
     <div class="container mt-5 col-lg-5">
         <div class="row">
             <div class="titulo">
                 <h3> <img class="imgProyecto" src="/images/estrella.webp" alt="estella"> Mis Proyectos</h3>
             </div>
             <div id="proyectosPrin" class="Proyectos col-lg-12 col-md-10 col-10">
-                <div class="tituloProyecto">
+                <div class="tituloProyecto mt-5">
                     <h3>
                         Jetell
                     </h3>
@@ -118,12 +120,22 @@
                 <div class="conlogo d-flex justify-content-center">
                     <img class="logo" src="/images/html.png" alt="html">
                 </div>
+                <div class="d-flex justify-content-center">
+                    <h5>
+                        HTML
+                    </h5>
+                </div>
                 <div class="progreso html-bar" style="--wth:60%"></div>
             </div>
 
             <div class="css col-lg-3 col-md-4 col-6 col-sm-6">
                 <div class="conlogo d-flex justify-content-center">
                     <img class="logo" src="/images/css.png" alt="css">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h5>
+                        CSS
+                    </h5>
                 </div>
                 <div class="progreso css-bar" style="--wth:40%"></div>
             </div>
@@ -132,12 +144,22 @@
                 <div class="conlogo d-flex justify-content-center">
                     <img class="logo" src="/images/js.gif" alt="js">
                 </div>
+                <div class="d-flex justify-content-center">
+                    <h5>
+                        javaScrips
+                    </h5>
+                </div>
                 <div class="progreso js-bar" style="--wth:10%"></div>
             </div>
 
             <div class="sql col-lg-3 col-md-4 col-6 col-sm-6">
                 <div class="conlogo d-flex justify-content-center">
                     <img class="logo" src="/images/sql.png" alt="sql">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h5>
+                        SQL
+                    </h5>
                 </div>
                 <div class="progreso sql-bar" style="--wth:30%"></div>
                 {{-- <p>En Progreso</p> --}}
@@ -147,6 +169,11 @@
                 <div class="conlogo d-flex justify-content-center">
                     <img class="logo" src="/images/laravel.png" alt="laravel">
                 </div>
+                <div class="d-flex justify-content-center">
+                    <h5 class="text-center">
+                        Fremeware Laravel
+                    </h5>
+                </div>
                 <div class="progreso laravel-bar" style="--wth:50%"></div>
             </div>
 
@@ -154,7 +181,55 @@
                 <div class="conlogo d-flex justify-content-center">
                     <img class="logo" src="/images/android.png" alt="android">
                 </div>
+                <div class="d-flex justify-content-center">
+                    <h5 class="text-center">
+                        Android Studio
+                    </h5>
+                </div>
                 <div class="progreso android-bar" style="--wth:40%"></div>
+            </div>
+        </div>
+    </div>
+    {{-- experiencia --}}
+    <div class="container col-lg-5 mb-3" id="Experiencia">
+        <div class="row">
+            <div class="tituloEx">
+                <h2>
+                    Experencia Laboral
+                </h2>
+            </div>
+            <div class="mt-3">
+                 <h5>
+                    Practica Profesional en startup "DevLet Spa"
+                 </h5>
+                 <p>
+                    al momento de empezar la practica me designaron como lider de Back-End  y las tareas Principales que realice en esta practica fueron:
+                    <li>
+                        encriptacion y decencriptacion de datos, tales como nombre de los usuarios , correos,numeros telefonico,direcciones,ect.
+                    </li>
+                    <li>
+                        agregar funciones para asi dar soporte a las gente de FrontEnd.
+                    </li>
+                    <li>
+                        busqueda de error en la pagina
+                    </li>
+                 </p>
+            </div>
+
+
+        </div>
+    </div>
+    {{-- Formacion --}}
+    <div class="container col-lg-5 mb-5" id="Formacion">
+        <div class="row">
+            <div class="formacion">
+                <h2>
+                    Formacion Academica
+                </h2>
+                <h5>
+                    Intitulo Profecional Inacap ,sede Santiago Centro (Santiago de Chile)
+                </h5>
+
             </div>
         </div>
     </div>
